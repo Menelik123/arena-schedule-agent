@@ -14,7 +14,7 @@ export async function sendScheduleEmail(
   });
 
   await resend.emails.send({
-    from: "The Arena Schedule <schedule@yourdomain.com>",
+    from: "The Arena Schedule <schedule@drivehubatl.org>",
     to: [process.env.RECIPIENT_EMAIL!],
     subject: `Daily Schedule — ${displayDate}`,
     html: `
